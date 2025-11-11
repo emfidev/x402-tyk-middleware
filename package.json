@@ -1,0 +1,46 @@
+{
+  "name": "@x402/tyk-middleware",
+  "version": "1.0.0",
+  "description": "X402 Payment Protocol middleware for Tyk API Gateway",
+  "main": "middleware/x402_payment.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emfidev/x402-tyk-middleware.git"
+  },
+  "keywords": [
+    "x402",
+    "payment",
+    "tyk",
+    "api-gateway",
+    "blockchain",
+    "micropayments",
+    "solana",
+    "http-402",
+    "middleware"
+  ],
+  "author": "X402 Protocol Contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emfidev/x402-tyk-middleware/issues"
+  },
+  "homepage": "https://github.com/emfidev/x402-tyk-middleware#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "cd tests && npm test",
+    "test:unit": "cd tests && npm run test:unit",
+    "test:integration": "cd tests && npm run test:integration",
+    "test:blockchain": "cd tests && npm run test:blockchain",
+    "test:coverage": "cd tests && npm run test:coverage",
+    "lint": "eslint middleware/**/*.js",
+    "docs": "cd docs && npm run build"
+  },
+  "files": [
+    "middleware/",
+    "examples/",
+    "docs/",
+    "README.md",
+    "LICENSE"
+  ]
+}
